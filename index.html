@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hassan Motors - Premium Showroom</title>
+<title>Hassan Motors - Real Cars</title>
 
 <style>
 body{
@@ -13,7 +13,6 @@ background:#0b0b0b;
 color:white;
 }
 
-/* HEADER */
 header{
 background:black;
 padding:20px;
@@ -21,32 +20,8 @@ text-align:center;
 color:gold;
 font-size:26px;
 font-weight:bold;
-letter-spacing:1px;
 }
 
-.sub{
-font-size:14px;
-color:#aaa;
-}
-
-/* FILTER BAR */
-.filter{
-display:flex;
-flex-wrap:wrap;
-gap:10px;
-justify-content:center;
-padding:15px;
-background:#151515;
-}
-
-input, select{
-padding:10px;
-border:none;
-border-radius:8px;
-outline:none;
-}
-
-/* HERO */
 .hero{
 background:url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7') center/cover;
 padding:90px 20px;
@@ -56,11 +31,10 @@ text-align:center;
 .hero h1{
 background:rgba(0,0,0,0.6);
 display:inline-block;
-padding:15px 20px;
+padding:15px;
 border-radius:10px;
 }
 
-/* CAR GRID */
 .container{
 display:flex;
 flex-wrap:wrap;
@@ -75,7 +49,6 @@ width:280px;
 border-radius:15px;
 overflow:hidden;
 transition:0.3s;
-box-shadow:0 0 10px rgba(255,215,0,0.15);
 }
 
 .card:hover{
@@ -96,22 +69,8 @@ color:gold;
 .card p{
 margin:10px;
 color:#bbb;
-font-size:14px;
 }
 
-/* BADGES */
-.badge{
-position:absolute;
-background:gold;
-color:black;
-padding:5px 10px;
-font-size:12px;
-font-weight:bold;
-border-radius:5px;
-margin:10px;
-}
-
-/* BUTTON */
 .btn{
 background:gold;
 border:none;
@@ -123,126 +82,77 @@ cursor:pointer;
 font-weight:bold;
 }
 
-/* CARD WRAP */
-.cardWrap{
-position:relative;
-}
-
-/* FOOTER */
-footer{
-text-align:center;
-padding:20px;
-background:black;
-color:#aaa;
-margin-top:20px;
-}
-
-/* WHATSAPP */
 .whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px 18px;
+padding:15px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
 }
 </style>
 
-<script>
-function filterCars() {
-let input = document.getElementById("search").value.toLowerCase();
-let cards = document.getElementsByClassName("cardWrap");
-
-for(let i=0;i<cards.length;i++){
-let text = cards[i].innerText.toLowerCase();
-cards[i].style.display = text.includes(input) ? "block" : "none";
-}
-}
-</script>
-
 </head>
 
 <body>
 
 <header>
-HASSAN MOTORS 🚗
-<div class="sub">Premium Cars Showroom | Lahore & Islamabad</div>
+HASSAN MOTORS 🚗 Real Cars Collection
 </header>
 
 <div class="hero">
-<h1>Find Your Dream Car Today</h1>
+<h1>Premium Cars in Lahore & Islamabad</h1>
 </div>
 
-<!-- FILTER -->
-<div class="filter">
-<input type="text" id="search" onkeyup="filterCars()" placeholder="Search car (Civic, Corolla...)">
-<select>
-<option>All Cities</option>
-<option>Lahore</option>
-<option>Islamabad</option>
-</select>
-<select>
-<option>Price Range</option>
-<option>10-20 Lakh</option>
-<option>20-40 Lakh</option>
-<option>40+ Lakh</option>
-</select>
-</div>
-
-<!-- CARS -->
 <div class="container">
 
-<div class="cardWrap">
-<div class="badge">USED</div>
+<!-- COROLLA ALTIS -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a">
-<h3>Toyota Corolla 2022</h3>
-<p>Lahore • 1800cc • Good Condition</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/2019_Toyota_Corolla_Altis_front.jpg">
+<h3>Toyota Corolla Altis</h3>
+<p>Model 2019-2022 • Lahore</p>
 <button class="btn">WhatsApp Deal</button>
 </div>
-</div>
 
-<div class="cardWrap">
-<div class="badge">NEW</div>
+<!-- SUZUKI ALTO -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6">
-<h3>Honda Civic 2023</h3>
-<p>Islamabad • Brand New</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Suzuki_Alto_2022.jpg">
+<h3>Suzuki Alto</h3>
+<p>Model 2021-2024 • Economical</p>
 <button class="btn">WhatsApp Deal</button>
 </div>
-</div>
 
-<div class="cardWrap">
-<div class="badge">USED</div>
+<!-- HONDA CIVIC 13th GEN -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
-<h3>Suzuki Alto 2021</h3>
-<p>Lahore • Fuel Efficient</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/2022_Honda_Civic_Sedan.jpg">
+<h3>Honda Civic (11th Gen Pakistan)</h3>
+<p>Model 2022-2024 • Islamabad</p>
 <button class="btn">WhatsApp Deal</button>
 </div>
-</div>
 
-<div class="cardWrap">
-<div class="badge">NEW</div>
+<!-- MG HS -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1609521263047-f8f205293f24">
-<h3>Kia Sportage 2024</h3>
-<p>Islamabad • SUV</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/MG_HS_2020.jpg">
+<h3>MG HS SUV</h3>
+<p>Turbo SUV • Luxury Interior</p>
 <button class="btn">WhatsApp Deal</button>
 </div>
+
+<!-- KIA SPORTAGE -->
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Kia_Sportage_2022.jpg">
+<h3>Kia Sportage</h3>
+<p>New Shape • SUV • Islamabad</p>
+<button class="btn">WhatsApp Deal</button>
 </div>
 
 </div>
-
-<footer>
-© 2026 Hassan Motors Pvt Ltd | CEO Hassan Ali Khan | 📞 0312-2299224
-</footer>
 
 <a class="whatsapp" href="https://wa.me/923122299224">
-WhatsApp
+WhatsApp Us
 </a>
 
 </body>
