@@ -1,2 +1,2 @@
 # Hassan-Motors
-Hassan Motors Pvt Ltd - Car Sale &amp; Purchase Website
+Hassan Motors Pvt Ltd - Car Sale &amp; Purchase 
